@@ -1,5 +1,6 @@
 # Plant Leaf Image Classification Project
-![Uploading image.png…]()
+<img width="1079" height="278" alt="Screenshot 2026-05-16 135016" src="https://github.com/user-attachments/assets/b029ea02-6490-4b8e-b312-458536976520" />
+
 
 
 ## Project Description
