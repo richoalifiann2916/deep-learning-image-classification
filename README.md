@@ -80,6 +80,7 @@ Run the notebook:
 
 - jupyter notebook notebook.ipynb
 
+---  
 ## Deployment
 
 The trained model was converted into:
@@ -88,6 +89,7 @@ SavedModel
 TensorFlow Lite
 TensorFlow.js
 
+---  
 ## Conclusion
 
 The model successfully classifies plant leaf conditions and can be further implemented for real-world agricultural applications.
