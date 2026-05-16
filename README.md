@@ -1,25 +1,25 @@
-# Proyek Klasifikasi Gambar Daun Tanaman
+# Plant Leaf Image Classification Project
 
-## Deskripsi Proyek
-Proyek ini bertujuan untuk mengklasifikasikan kondisi daun tanaman ke dalam tiga kategori:
+## Project Description
+This project aims to classify plant leaf conditions into three categories:
 - healthy
 - stressed
 - diseased
 
-Model utama yang digunakan adalah Custom CNN berbasis Sequential dengan layer Conv2D dan Pooling.
+The main model used is a Custom CNN based on Sequential architecture with Conv2D and Pooling layers.
 
 ---
 
 ## Dataset
-Dataset terdiri dari gambar daun tanaman yang telah dipetakan ke dalam tiga kelas utama:
+The dataset consists of plant leaf images that have been categorized into three main classes:
 - healthy
 - stressed
 - diseased
 
 ---
 
-## Arsitektur Model
-Model menggunakan:
+## Model Architecture
+The model uses:
 - Conv2D
 - MaxPooling2D
 - BatchNormalization
@@ -29,19 +29,19 @@ Model menggunakan:
 
 ---
 
-## Tahapan Proyek
+## Project Stages
 
 ### 1. Preprocessing
-- Resize gambar ke 224x224
-- Normalisasi pixel (0–1)
+- Resize images to 224x224
+- Normalize pixel values to the range of 0–1
 
 ### 2. Training
 - Optimizer: Adam
-- Loss: Categorical Crossentropy (label smoothing)
-- Epoch: 10
+- Loss Function: Categorical Crossentropy (with label smoothing)
+- Epochs: 10
 
-### 3. Evaluasi
-Menggunakan:
+### 3. Evaluation
+The model evaluation uses:
 - Accuracy
 - Precision
 - Recall
@@ -49,16 +49,17 @@ Menggunakan:
 - Confusion Matrix
 
 ### 4. Inference
-Model diuji menggunakan gambar baru untuk melihat generalisasi.
+The trained model is tested using new images to evaluate its generalization capability.
 
 ---
 
-## Hasil
-Model Custom CNN menunjukkan performa yang baik dengan akurasi tinggi dan training yang stabil.
+## Results
+The Custom CNN model achieved strong performance with high accuracy and stable training results.
 
 ---
 
-## Struktur Folder
+## Folder Structure
+```plaintext
 submission/
 ├── tfjs_model/
 ├── tflite/
@@ -67,25 +68,22 @@ submission/
 ├── README.md
 ├── requirements.txt
 
----
+How to Run
 
-## Cara Menjalankan
+Install the dependencies:
 
-Install dependency:
 pip install -r requirements.txt
 
-Jalankan notebook:
+Run the notebook:
+
 jupyter notebook notebook.ipynb
+Deployment
 
----
+The trained model was converted into:
 
-## Deployment
-Model dikonversi ke:
-- SavedModel
-- TensorFlow Lite
-- TensorFlow.js
+SavedModel
+TensorFlow Lite
+TensorFlow.js
+Conclusion
 
----
-
-## Kesimpulan
-Model berhasil melakukan klasifikasi kondisi daun tanaman dengan baik dan dapat digunakan untuk implementasi lebih lanjut.
+The model successfully classifies plant leaf conditions and can be further implemented for real-world agricultural applications.
