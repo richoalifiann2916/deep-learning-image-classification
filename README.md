@@ -67,23 +67,27 @@ submission/
 ├── notebook.ipynb
 ├── README.md
 ├── requirements.txt
+```
 
-How to Run
+---  
+## How to Run
 
 Install the dependencies:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 Run the notebook:
 
-jupyter notebook notebook.ipynb
-Deployment
+- jupyter notebook notebook.ipynb
+
+## Deployment
 
 The trained model was converted into:
 
 SavedModel
 TensorFlow Lite
 TensorFlow.js
-Conclusion
+
+## Conclusion
 
 The model successfully classifies plant leaf conditions and can be further implemented for real-world agricultural applications.
