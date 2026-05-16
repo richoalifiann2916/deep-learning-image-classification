@@ -1,0 +1,3 @@
+diseased
+healthy
+stressed
